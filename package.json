@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "main": true,
   "description": "A direct manipulation visualization design environment.",
+  "engines": {
+    "node": "8.1.2"
+  },
   "keywords": [
     "lyra",
     "vega",
@@ -118,5 +121,8 @@
     "test:chrome": "npm run test -- --watch --browsers Chrome",
     "test:osx": "npm run test -- --browsers PhantomJS,Chrome,Firefox,Safari",
     "test:win": "npm run test -- --browsers PhantomJS,Chrome,Firefox,IE,IE9,IE10"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
