@@ -21,9 +21,9 @@ app.get('*.json', function(req, res) {
   res.sendFile(req.originalUrl);
 });
 
-app.get('*.html', function(req, res) {
+app.get('/', function(req, res) {
   res.set('Contenttype', 'text/html');
-  res.sendFile(process.cwd() + '/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 app.listen(port, function() {
