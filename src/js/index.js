@@ -2,7 +2,6 @@
 'use strict';
 
 require('../scss/app.scss');
-
 // Additional requires to polyfill + browserify package.
 require('array.prototype.find');
 require('string.prototype.startswith');
