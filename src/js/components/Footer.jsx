@@ -24,12 +24,12 @@ var Footer = React.createClass({
         <ul>
           <li onClick={this.openModal}>About</li>
           <li><a href="https://github.com/vega/lyra">Github</a></li>
-          <li>
+          {/* <li>
             <Walkthroughs/>
           </li>
           <li>
             <Settings/>
-          </li>
+          </li> */}
         </ul>
         <Modal
           isOpen={this.state.modalIsOpen}
