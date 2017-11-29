@@ -5,10 +5,15 @@ var app = express();
 
 app.set('port', (process.env.PORT || 3000));
 
-app.use(express.static(__dirname + '/build'));
+app.use('/build', express.static(__dirname + 'build'));
 
 app.get('*.css', function(request, response) {
   response.set('Content-Type', 'text/css');
+  response.sendFile(__dirname + request.originalUrl);
+});
+
+app.get('*.js', function(request, response) {
+  response.set('Content-Type', 'application/javascript');
   response.sendFile(__dirname + request.originalUrl);
 });
 
