@@ -1,4 +1,5 @@
 'use strict';
+
 var React = require('react'),
     Modal = require('react-modal'),
     Settings = require('./settings/SettingsModal'),
