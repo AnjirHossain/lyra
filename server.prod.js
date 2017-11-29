@@ -8,7 +8,6 @@ app.set('port', (process.env.PORT || 3000));
 app.use('/build', express.static(__dirname + '/build'));
 
 app.get('*.json', function(request, response) {
-
   response.sendFile(__dirname + request.originalUrl);
 });
 
