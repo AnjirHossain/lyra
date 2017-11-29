@@ -4,6 +4,8 @@ var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
 
+console.log('__dirname: ', __dirname);
+
 app.use('/public', express.static(__dirname + '/build'));
 
 app.get('*.css', function(req, res) {
@@ -23,7 +25,7 @@ app.get('*.json', function(req, res) {
 
 app.get('*', function(req, res) {
   res.set('Contenttype', 'text/html');
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/build/index.html');
 });
 
 app.listen(port, function() {
