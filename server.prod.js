@@ -9,5 +9,5 @@ app.get('/', function(req, res) {
 });
 
 app.listen(port, function() {
-  console.log('App listening on port 3000!')
+  console.log('Lyra 2 demo coming soon!')
 });
