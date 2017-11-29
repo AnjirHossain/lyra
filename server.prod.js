@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
 
-app.use('/public', express.static('build'));
+app.use('/public', express.static(__dirname + '/build'));
 
 app.get('*.css', function(req, res) {
   res.set('Contenttype', 'text/css');
