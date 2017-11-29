@@ -21,7 +21,7 @@ app.get('*.json', function(req, res) {
   res.sendFile(req.originalUrl);
 });
 
-app.get('/', function(req, res) {
+app.get('*.html', function(req, res) {
   res.set('Contenttype', 'text/html');
   res.sendFile(process.cwd() + '/index.html');
 });
