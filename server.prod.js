@@ -12,6 +12,7 @@ app.get('*.json', function(request, response) {
 });
 
 app.get('/', function(request, response) {
+  console.log(request);
   response.sendFile(__dirname + '/index.html');
 });
 
