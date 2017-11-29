@@ -7,11 +7,6 @@ app.set('port', (process.env.PORT || 3000));
 
 app.use('/build', express.static(__dirname + '/build'));
 
-app.get('*.css', function(request, response) {
-  console.log(request.originalUrl);
-  response.sendFile(__dirname + request.originalUrl);
-});
-
 app.get('*.json', function(request, response) {
   response.sendFile(__dirname + request.originalUrl);
 });
