@@ -7,14 +7,16 @@ app.set('port', (process.env.PORT || 3000));
 
 app.use('/build', express.static(__dirname + '/build'));
 
+app.get('*.css', function(request, response) {
+  response.sendFile(__dirname + request.originalUrl);
+});
+
 app.get('*.json', function(request, response) {
   response.sendFile(__dirname + request.originalUrl);
 });
 
 app.get('*', function(request, response) {
-
   console.log(request);
-
   response.sendFile(__dirname + '/index.html');
 });
 
