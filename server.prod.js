@@ -11,8 +11,7 @@ app.get('*.json', function(request, response) {
   response.sendFile(__dirname + request.originalUrl);
 });
 
-app.get('*', function(request, response) {
-  console.log(request);
+app.get('/', function(request, response) {
   response.sendFile(__dirname + '/index.html');
 });
 
