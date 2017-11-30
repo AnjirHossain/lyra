@@ -27,7 +27,7 @@ app.get('*.json', function(req, res) {
   res.sendFile(req.originalUrl);
 });
 
-app.get('*', function(req, res) {
+app.get('/', function(req, res) {
   console.log('Request for everything else: ', req);
 
   res.set('Contenttype', 'text/html');
