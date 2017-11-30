@@ -31,7 +31,7 @@ app.get('*', function(req, res) {
   console.log('Request for everything else: ', req);
 
   res.set('Contenttype', 'text/html');
-  res.sendFile(__dirname + '/build/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 app.listen(port, function() {
