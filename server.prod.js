@@ -35,5 +35,5 @@ app.get('*', function(req, res) {
 });
 
 app.listen(port, function() {
-  console.log('Lyra 2 demo coming soon!')
+  console.log('Lyra 2 demo coming soon!');
 });
