@@ -4,21 +4,21 @@ module.exports = [
   {
     name: 'Cars',
     description: 'Vehicular data which consists of names, cylinders and displacement',
-    url: '/public/data/cars.json'
+    url: 'https://lyra2statics.herokuapp.com/public/data/cars.json'
   },
   {
     name: 'Jobs',
     description: 'Job demographics such as job type, sex and count',
-    url:  '/public/data/jobs.json'
+    url:  'https://lyra2statics.herokuapp.com/public/data/jobs.json'
   },
   {
     name: 'Gapminder',
     description: 'Year, country, population, fertility',
-    url:  '/public/data/gapminder.json'
+    url:  'https://lyra2statics.herokuapp.com/public/data/gapminder.json'
   },
   {
     name: 'Climate',
     description: 'Climate attributes such as temperature by lat-long',
-    url:  '/public/data/climate.json'
+    url:  'https://lyra2statics.herokuapp.com/public/data/climate.json'
   }
 ];
